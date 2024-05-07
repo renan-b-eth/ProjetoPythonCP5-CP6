@@ -31,8 +31,8 @@ def consumir_api(nome_cidade, dias):
         print("Cidade não encontrada. Por favor, verifique o nome da cidade.")
         return None
 
-nome_cidade = input(str("Digite cidade:"))
-dias = input("Quantidade de dias:")
+nome_cidade = input("Digite cidade:")
+dias = int(input("Quantidade de dias:"))
 
 user_data = consumir_api(nome_cidade, dias)
 if user_data:
