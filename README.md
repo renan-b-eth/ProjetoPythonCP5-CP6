@@ -1,8 +1,8 @@
-# Bôra pra Praia!
+# Bora pra Praia!
 
 Este projeto visa facilitar viagens de última hora para um rápido passeio à praia, fornecendo informações atualizadas sobre as condições das praias, ondas e ventos.  
 Desenvolvido como parte da Avaliação Checkpoint da disciplina de Computational Thinking with Python do curso de Análise e Desenvolvimento de Sistemas da faculdade FIAP.  
-**Bôra pra Praia!** é focado no monitoramento das praias, oferecendo aos usuários informações valiosas para uma experiência segura e agradável.
+**Bora pra Praia!** é focado no monitoramento das praias, oferecendo aos usuários informações valiosas para uma experiência segura e agradável.
 
 <!--
 ## Deploy do projeto
