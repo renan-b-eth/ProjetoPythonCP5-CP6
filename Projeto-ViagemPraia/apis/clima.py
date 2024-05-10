@@ -4,7 +4,7 @@ def api_clima():
     
     api_key = '' #chave da api está nas anotações
 
-    city = input('Enter city name: ')
+    city = input('Bora para qual cidade/cidade?!: ')
 
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
 
