@@ -13,18 +13,19 @@
     <p></p>
     <div class="container-cidade">
         <h2>Qual cidade fica a praia?</h2>
-        <span> Atualmente nosso sistema retorna informações do clima, das ondas com base no nome da cidade onde está a praia.</span><br>
-        <form action="/enviar" method="POST">
+        <form action="/enviar-cidade" method="POST" class="cidade">
             <label>Cidade:</label>
             <input type="text" id="cidade" name="cidade" required>
             <input type="submit" value="Bora">
         </form>
+        <span> Atualmente nosso sistema retorna informações do clima, das ondas com base no nome da cidade onde está a praia.</span><br>
     <div class="container-praia">
         <h2>Saiba se a praia que você quer ir está própria para banho, a seguir:</h2>
-        <label>Insira o nome da Praia:
-        <input type="text" id="cidade" name="cidade" required>
-        <input type="submit" value="Bora">
-        </label>
+        <form action="/enviar-praia" method="POST">
+            <label>Praia:</label>
+            <input type="text" id="praia" name="praia" required>
+            <input type="submit" value="Bora">
+        </form>
     </div>
 
 </body>
