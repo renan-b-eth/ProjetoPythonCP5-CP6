@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <p>
+        <a href='/'>Home</a>
+        <a href='/contato'>Contato</a>
+        <a href='/noticias'>Noticias</a>
+        <a href='/clima'>Clima</a>
+    </p>
+    <h1>Preencha suas informações {{ usuario }}</h1>
+    
+    <form action="/enviar" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
