@@ -1,12 +1,14 @@
 import requests
+import main
+import datakeys
 
-def api_clima():
+def api_clima(cidade):
     
-    api_key = '' #chave da api está nas anotações
+    api_key = key_clima #chave da api está nas anotações
 
-    city = input('Bora para qual cidade/cidade?!: ')
+    #city = input('Bora para qual cidade/cidade?!: ')
 
-    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
+    url = f'http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={api_key}'
 
     response = requests.get(url)
 
