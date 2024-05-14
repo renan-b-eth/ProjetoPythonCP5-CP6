@@ -1,5 +1,4 @@
 import requests
-import main
 import datakeys
 
 def api_clima(cidade):
@@ -17,11 +16,11 @@ def api_clima(cidade):
             temp = round((data['main']['temp']-273.15))
             temp_min = round((data['main']['temp_min']-273.15))
             temp_max = round((data['main']['temp_max']-273.15))
-            print(f'Previsão do tempo para {city}')
+            print(f'Previsão do tempo para {cidade}')
             print(f'Atual: {temp}°C')
             print(f'Máxima do dia: {temp_max}°C')
             print(f'Mínima do dia: {temp_min}°C')
+            return temp, temp_max, temp_min, cidade
     else:
             print('Error fetching weather data')
     
-print(api_clima())
