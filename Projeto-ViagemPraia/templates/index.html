@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Bora pra Praia!</title>
 </head>
 <header>
@@ -21,10 +21,10 @@
         <span> Atualmente nosso sistema retorna informações do clima e das ondas com base no nome da cidade onde está a praia.</span>
             {% if temperatura %}
             <p>Temperatura: {{temperatura[0]}}°C</p>
-            <p>Máxima: {{temperatura[1]}}</p>
-            <p>Mínima: {{temperatura[2]}}</p>
-            <p>Você está consultando o clima da seguint cidade: {{temperatura[2]}}</p>
-            <p>Para mais informações sobre o clima da cidade<a href ='https://www.tempo.com/{cidade}.htm'>Clique Aqui</a></p>
+            <p>Máxima: {{temperatura[1]}}°C</p>
+            <p>Mínima: {{temperatura[2]}}°C</p>
+            <p>Você está consultando o clima da seguinte cidade: {{temperatura[3]}}</p>
+            <p>Para mais informações sobre o clima da cidade<a href ="">Clique Aqui</a></p>
             {% endif %}
             {% if error %}
             <p>Error: {{ error }}</p>

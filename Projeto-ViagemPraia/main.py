@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request
 import requests
 from apis.clima import api_clima
-
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/templates')
 
 @app.route('/')
 def home():

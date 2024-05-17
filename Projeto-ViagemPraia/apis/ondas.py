@@ -41,3 +41,4 @@ if user_data:
         print(f"Hora: {onda['hora']}, Vento: {onda['vento']}, Altura Onda: {onda['altura_onda']}")
 else:
     print("Erro ao obter dados. Por favor, verifique o nome da cidade e a quantidade de dias.")
+
