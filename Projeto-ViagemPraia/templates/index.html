@@ -21,8 +21,10 @@
         <span> Atualmente nosso sistema retorna informações do clima e das ondas com base no nome da cidade onde está a praia.</span>
             {% if temperatura %}
             <p>Temperatura: {{temperatura[0]}}°C</p>
-            <p>Temperatura:</p>
-            <a href ='{{temperatura[-1]}}'>nome</a>
+            <p>Máxima: {{temperatura[1]}}</p>
+            <p>Mínima: {{temperatura[2]}}</p>
+            <p>Você está consultando o clima da seguint cidade: {{temperatura[2]}}</p>
+            <p>Para mais informações sobre o clima da cidade<a href ='https://www.tempo.com/{cidade}.htm'>Clique Aqui</a></p>
             {% endif %}
             {% if error %}
             <p>Error: {{ error }}</p>

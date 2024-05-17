@@ -31,4 +31,6 @@ if response.status_code == 200:
 else:
     print(f"Erro ao acessar a página: {response.status_code}")
 
+
 # def busca_praia():
+
