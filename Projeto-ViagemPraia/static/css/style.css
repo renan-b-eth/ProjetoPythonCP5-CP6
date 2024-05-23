@@ -1,45 +1,108 @@
-* {
-    padding: 0%;
-    margin: 0%;
-}
-
-header {
-    background-color: #79b2c5;
-    padding: 10px;
-    text-align: center;
-    border-radius: 20px;
-}
-
-h1 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-    color: white;
-}
-
-.container-cidade {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.container-cidade h2{
-    font-size: 20px;
-    padding: 10px;
-}
-
-.container-cidade span {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 10px;
-    padding-left: 10px;
-}
-
-.cidade{
-    padding-left: 10px;
-}
-
-.container-praia {
-    padding: 10px;
-}
+/* Estilo geral */
 
 body {
-    /*background-color: #cec1b02f;*/
-    background-color: #80869223;
-}
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #79b2c5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  
+  /* Seção Cidade */
+  
+  .container-cidade {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #79b2c5;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #79b2c5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Informações da Cidade */
+  
+  .informacoes-cidade {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  p {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #79b2c5;
+    text-decoration: none;
+  }
+  
+  /* Seção Praia */
+  
+  .container-praia {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos adicionais para formulário da praia (opcional) */
+  
+  .container-praia label,
+  .container-praia input[type="text"],
+  .container-praia input[type="submit"] {
+    /* Estilos personalizados para o formulário da praia */
+  }
+  
+  /* Mensagens de erro */
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+ 
