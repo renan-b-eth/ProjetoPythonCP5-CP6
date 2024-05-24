@@ -15,6 +15,12 @@ def getcidade():
     temperatura= api_clima(cidade)
     return render_template('index.html', temperatura= temperatura)
 
+@app.route('/enviar-praia', methods=['POST'])
+def getpraia():
+    cidade = request.form['praia']
+    limpeza= busca_praia(praia)
+    return render_template('index.html', limpeza= limpeza)
+
 
 if __name__ == '__main__':
     app.run()

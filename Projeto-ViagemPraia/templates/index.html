@@ -24,7 +24,7 @@
             <p>Máxima: {{temperatura[1]}}°C</p>
             <p>Mínima: {{temperatura[2]}}°C</p>
             <p>Você está consultando o clima da seguinte cidade: {{temperatura[3]}}</p>
-            <p>Para mais informações sobre o clima da cidade<a href ="">Clique Aqui</a></p>
+            <p>Para mais informações sobre o clima da cidade<a href ="https://www.climatempo.com.br/">Clique Aqui</a></p>
             {% endif %}
             {% if error %}
             <p>Error: {{ error }}</p>
@@ -37,6 +37,16 @@
             <input type="text" id="praia" name="praia" required><br><br>
             <input type="submit" value=" Bora">
         </form>
+            {% if limpeza %}
+                <p>Nome da praia: {{temperatura[0]}}°C</p>
+                <p>Máxima: {{temperatura[1]}}°C</p>
+                <p>Mínima: {{temperatura[2]}}°C</p>
+                <p>Você está consultando o clima da seguinte cidade: {{temperatura[3]}}</p>
+                <p>Para mais informações sobre o clima da cidade<a href ="">Clique Aqui</a></p>
+                {% endif %}
+                {% if error %}
+                <p>Error: {{ error }}</p>
+                {% endif %}
     </div>
 
 </body>
